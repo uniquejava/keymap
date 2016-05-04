@@ -1,0 +1,29 @@
+'atom-text-editor':
+  'cmd-shift-f': 'editor:auto-indent'
+  'alt-/': 'autocomplete-plus:activate'
+
+# Common keybindings (all platforms)
+'atom-text-editor:not([mini])':
+  'alt-up': 'editor:move-line-up'
+  'alt-down': 'editor:move-line-down'
+  'alt-shift-up': 'bracket-matcher:select-inside-brackets'
+
+# Mac keybindings
+'.platform-darwin atom-text-editor:not([mini])':
+  'cmd-d': 'editor:delete-line'
+  'cmd-l': 'go-to-line:toggle'
+  'cmd-alt-down': 'editor:duplicate-lines'
+  'cmd-alt-j': 'editor:join-lines'
+  'cmd-o': 'symbols-view:toggle-file-symbols'
+  'cmd-X': 'editor:upper-case'
+  'cmd-Y': 'editor:lower-case'
+  'cmd-shift-p': 'bracket-matcher:go-to-matching-bracket'
+  'cmd-shift-c': 'editor:toggle-line-comments'
+
+'.platform-darwin atom-workspace':
+  'cmd-R': 'fuzzy-finder:toggle-file-finder'
+  'cmd-e': 'fuzzy-finder:toggle-buffer-finder'
+  'cmd-f': 'find-and-replace:toggle'
+  'ctrl-h': 'project-find:toggle'
+  'cmd-S': 'window:save-all'
+  'cmd-3': 'command-palette:toggle'
