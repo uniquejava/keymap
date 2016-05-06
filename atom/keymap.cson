@@ -4,6 +4,9 @@
   'ctrl-o': 'core:nop'
   'cmd-o': 'core:nop'
 
+'atom-text-editor:not([mini])':
+  'tab': 'emmet:expand-abbreviation-with-tab'
+
 '.platform-darwin':
   'cmd-1': 'tree-view:toggle'
 
