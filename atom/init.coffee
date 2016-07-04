@@ -1,7 +1,12 @@
 atom.commands.add 'atom-workspace', 'custom:colonize', ->
   editor = atom.workspace.getActiveTextEditor()
   editor.moveToEndOfLine()
-  editor.insertText(";\n")
+  editor.insertText(";")
+  editor.autoIndentSelectedRows()
+atom.commands.add 'atom-workspace', 'custom:commalize', ->
+  editor = atom.workspace.getActiveTextEditor()
+  editor.moveToEndOfLine()
+  editor.insertText(",")
   editor.autoIndentSelectedRows()
 # Your init script
 #
