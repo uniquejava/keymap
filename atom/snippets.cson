@@ -1,0 +1,39 @@
+'.source.js':
+  'use strict':
+    'prefix': 'us'
+    'body': '\'use strict\';\n\n'
+  'arrow function':
+    'prefix': 'af'
+    'body': '($1) => $2'
+  'import from':
+    'prefix': 'im'
+    'body': 'import $1 from \'$2\';\n$3'
+'.text.html.basic':
+  'jsv':
+    'prefix': 'jsv'
+    'body': '<script src="http://cdn.jsdelivr.net/vue/1.0.26/vue.min.js" charset="utf-8"></script>\n'
+'.text.html.php':
+  'map_entry':
+    'prefix': 'entry'
+    'body': '\'$1\' => $2,$3'
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
